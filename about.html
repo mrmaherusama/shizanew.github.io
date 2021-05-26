@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/all.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Estate Agent a Real Estate Category Bootstrap Responsive Website Template</title>
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 s-icons">
+
+          <ul>
+            <li class="my-follow">Follow Us</li>
+            <li><a href="https://www.facebook.com"><i class="fab fa-facebook-f"></i></a></li>
+            <li><a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="https://www.fa-twitter.com"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="https://www.vimeo.com"><i class="fab fa-vimeo-v"></i></a></li>
+          </ul>
+        </div>
+        <div class="col-md-4 my-header offset-md-4">
+          <ul>
+            <li class="my"><a href="#"><i class="fa fa-phone"></i>
+                +142 5897555</a></li>
+                <li><a href="#" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</a></li>
+                <li><a href="#"  data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">Register</a></li>
+              </ul>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="scroll-effect">
+  
+
+    <div id="id01" class="modal">
+      
+      <form class="modal-content animate" action="/action_page.php" method="post">
+        <div class="imgcontainer">
+          <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+          <img src="images/key.jpg"  alt="Avatar" class="avatar">
+        </div>
+    
+        <div class="container">
+          <label for="uname"><b>Username</b></label>
+          <input type="text" placeholder="Enter Username" name="uname" required>
+    
+          <label for="psw"><b>Password</b></label>
+          <input type="password" placeholder="Enter Password" name="psw" required>
+            
+          <button type="submit">Login</button>
+          <label>
+            <input type="checkbox" checked="checked" name="remember"> Remember me
+          </label>
+        </div>
+    
+        <div class="container" style="background-color:#f1f1f1">
+          <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+          <span class="psw">Forgot <a href="#">password?</a></span>
+        </div>
+      </form>
+    </div>
+    
+    </div>
+    
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">New message</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form action="action_page.php">
+              <div class="container">
+                <h1>Register</h1>
+                <p>Please fill in this form to create an account.</p>
+                <hr>
+            
+                <label for="email"><b>Email</b></label>
+                <input type="text" placeholder="Enter Email" name="email" required>
+            
+                <label for="psw"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="psw" required>
+            
+                <label for="psw-repeat"><b>Repeat Password</b></label>
+                <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+                <hr>
+            
+                <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+                <button type="submit" class="registerbtn">Register</button>
+              </div>
+            
+              <div class="container signin">
+                <p>Already have an account? <a href="#">Sign in</a>.</p>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-success">Submit</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  <div class="main-nav">
+    <nav class="navbar navbar-expand-md navbar-light bg-light">
+
+      <div class="container">
+
+        <a href="index.html" class="navbar-brand"><i class="fa fa-home"></i> Estate Agent</a>
+        <button class="navbar-toggler" data-target="#mynavbar" data-toggle="collapse">
+          <i class="fa fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="mynavbar">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item"><a href="index.html" class="nav-link">HOME</a></li>
+            <li class="nav-item"><a href="about.html" class="nav-link active">ABOUT</a></li>
+            <li class="nav-item"><a href="services.html" class="nav-link">SERVICES</a></li>
+            <li class="nav-item"><a href="contact.html" class="nav-link">CONTACT</a></li>
+          </ul>
+        </div>
+
+      </div>
+    </nav>
+  </div>
+<div id="about-banner">
+    <div class="overlay-2">
+    <div class="main-about">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5">
+                    <h1>About Us</h1>
+                    <div class="breadcrum">
+                        <p>
+                            <a href="index.html">Home</a> &nbsp; / &nbsp; <span class="highlight">About </span> 
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<section id="company">
+<div class="container">
+    <div class="row">
+        <div class="col-md-6 over">
+            <h2>Company Overview</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicingelit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud. Lorem ipsum dolor sit amet, consectetur adipisicingelit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
+            <span><i class=" mr-3 fa fa-arrow-right"></i>Insurgent Mindset</span>
+            <span><i class=" mr-3 fa fa-arrow-right"></i>Enduring Results</span>
+            <span><i class=" mr-3 fa fa-arrow-right"></i>Passionate People</span>
+            <button class="btn btn-team">About Our Team</button>
+    
+        </div>
+        <div class="col-md-6 comp-img">
+            <img src="images/g4.jpg" class="img-fluid" alt="">
+        </div>
+    </div>
+</div>
+
+
+</section>
+<section id="real">
+<div class="real-main">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 offset-md-4">
+                <h1 class="myh1">We Are Experienced Real Estate <br> Partner</h1>
+                <p class="real-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam ut quo delectus perferendis praesentium sunt?</p>
+             <div class="row">
+                <div class="col-sm-6">
+                    <div class="float-lt feature-gd">		
+                        <div class="icon"> <span><i class="fa fa-file"></i></span></div>
+                        <div class="icon-info">
+                           <h5>Real Estate Appraisal</h5>
+                           <p> Lorem ipsum dolor sit amet, consectetur adipisicingelit, sed do eiusmod tempor incididunt  </p>
+                          
+                       </div>
+                      </div>
+                      <div class="float-lt feature-gd">		
+                        <div class="icon"> <span><i class="fa fa-trophy"></i></span></div>
+                        <div class="icon-info">
+                           <h5>Premium Quality</h5>
+                           <p> Lorem ipsum dolor sit amet, consectetur adipisicingelit, sed do eiusmod tempor incididunt  </p>
+                          
+                       </div>
+                      </div>	
+                   </div>
+                   <div class="col-sm-6">
+                    <div class="float-lt feature-gd">		
+                        <div class="icon"> <span><i class="fa fa-clone"></i></span></div>
+                        <div class="icon-info">
+                           <h5>Favourite Properties</h5>
+                           <p> Lorem ipsum dolor sit amet, consectetur adipisicingelit, sed do eiusmod tempor incididunt  </p>
+                          
+                       </div>
+                      </div>
+                      <div class="float-lt feature-gd">		
+                        <div class="icon"> <span><i class="fa fa-bullseye"></i></span></div>
+                        <div class="icon-info">
+                           <h5>Finance Realestate</h5>
+                           <p> Lorem ipsum dolor sit amet, consectetur adipisicingelit, sed do eiusmod tempor incididunt  </p>
+                          
+                       </div>
+                      </div>	
+                   </div>
+             </div>
+             
+              
+ 
+ 
+            </div>
+        
+
+      </div>
+    </div>
+</div>
+</div>
+
+</section>
+<section id="our-agents">
+<div class="agents-head text-center">
+    <h1>Our Agents</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, quam. Velit sapiente beatae nisi quo dicta rerum.</p>
+</div>
+<div class="agents-main"><div class="container">
+    <div class="row">
+        <div class="col-md-3">
+            <div class="card">
+                <img src="images/black day-4.jpg" class="card-img-top" alt="">
+<div class="social-icons-about text-center">
+    <ul class="mysocial-1">
+        <li><a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i></a></li>
+        <li><a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a></li>
+        <li><a href="#" target="_blank"><i class="fab fa-twitter"></i></a></li>
+        
+      </ul>
+</div>
+
+              <div class="mycard-text">
+                <h5 class="card-title">
+                Rayan Naeem
+                </h5>
+                <p class="card-text">
+                  Senior Web Developer
+                </p>
+              </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card">
+                <img src="images/ali hamza-4.jpg" class="card-img-top" alt="">
+<div class="social-icons-about text-center">
+    <ul class="mysocial-1">
+        <li><a href="https://www.facebook.com/janzaib.gujjer"><i class="fab fa-facebook"></i></a></li>
+        <li><a href="https://instagram.com/alihamza5281?igshid=fq9u3lncvm5l"><i class="fab fa-instagram"></i></a></li>
+        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+        
+      </ul>
+</div>
+
+              <div class="mycard-text">
+                <h5 class="card-title">
+                Ali Hamza
+                </h5>
+                <p class="card-text">
+                   CEO Amazon
+                </p>
+              </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card">
+                <img src="images/gujjar-6.jpg" class="card-img-top" alt="">
+<div class="social-icons-about text-center">
+    <ul class="mysocial-1">
+        <li><a href="https://www.facebook.com/profile.php?id=100011343852496" target="_blank"><i class="fab fa-facebook"></i></a></li>
+        <li><a href="https://instagram.com/haidergujjar30?igshid=1kx0u2j746d60"><i class="fab fa-instagram"></i></a></li>
+        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+        
+      </ul>
+</div>
+
+              <div class="mycard-text">
+                <h5 class="card-title">
+                    Haider Gujjar
+                </h5>
+                <p class="card-text">
+                    CEO Panorama
+                </p>
+              </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card">
+                <img src="images/usman-4.jpg" class="card-img-top" alt="">
+<div class="social-icons-about text-center">
+    <ul class="mysocial-1">
+        <li><a href="https://www.facebook.com/chaudry.usman.718" target="_blank"><i class="fab fa-facebook"></i></a></li>
+        <li><a href="https://instagram.com/chaudrys_official?igshid=zt4fthwd44us" target="_blank"><i class="fab fa-instagram"></i></a></li>
+        <li><a href="#" target="_blank"><i class="fab fa-twitter"></i></a></li>
+        
+      </ul>
+</div>
+
+              <div class="mycard-text">
+                <h5 class="card-title">
+                Chaudhry Usman
+                </h5>
+                <p class="card-text">
+                    Call Center  Agent
+                </p>
+              </div>
+            </div>
+        </div>
+    </div>
+</div></div>
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <footer>
+    <div class="overlay-2">
+      <div class="footer-head">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 ">
+              <h2>News Letter - Get Updates & <br> Latest News</h2>
+            </div>
+            <div class="col-md-6">
+              <form class="rightside-form">
+                <input type="email" name="email" id="email" placeholder="Enter your email">
+                <button class="btn" type="submit">Subscribe</button>
+              </form>
+            </div>
+          </div>
+        </div>
+        <hr class="myhr">
+      </div>
+      <div class="footer-main">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4 about-head">
+              <h4>About Us</h4>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, harum?</p>
+              <div class="social">
+                <h3>
+                  Social Links
+                </h3>
+                <ul class="mysocial">
+                  <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                  <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                  <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                  <li><a href="#"><i class="fab fa-vimeo-v"></i></a></li>
+                  <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-2">
+              <div class="my-use">
+                <h4 class="use">Useful Links</h4>
+                <ul class="links">
+                  <li><a href="#">Management</a></li>
+                  <li><a href="#">Reporting</a></li>
+                  <li><a href="#">Tracking</a></li>
+                  <li><a href="#">All Users
+                    </a></li>
+                  <li><a href="#">Support
+                    </a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <h3 class="feat-color">Featured Properties</h3>
+              <div class="feat-data">
+                <img src="images/g7.jpg" class="img-fluid" alt="">
+                <p>
+                  We Are Leading International <br> Consultiing Agency</p>
+                <div class="clear"></div>
+              </div>
+              <div class="feat-data">
+                <img src="images/g7.jpg" class="img-fluid" alt="">
+                <p>
+
+                  Digital Marketing Agency <br>
+                  all the foundational tools
+
+                </p>
+                <div class="clear"></div>
+              </div>
+              <div class="feat-data">
+                <img src="images/g7.jpg" class="img-fluid" alt="">
+                <p>
+                  We Are Leading International <br> Consultiing Agency</p>
+                <div class="clear"></div>
+              </div>
+            </div>
+
+
+
+
+
+
+            <div class="col-md-2">
+              <div class="my-use">
+                <h4 class="use">Quick Links</h4>
+                <ul class="links">
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="about.html">About</a></li>
+                  <li><a href="services.html">Services</a></li>
+                  <li><a href="#">Blog
+                    </a></li>
+                  <li><a href="contact.html">Contact
+                    </a></li>
+                </ul>
+              </div>
+            </div>
+
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <hr class="myhr">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12 last-footer text-center">
+              <h5>&copy2020 Estate Agent. All rights reserved | Designated by Rayan Naeem </h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+  <script src="js/jquery.js"></script>
+  <script src="js/popper.js"></script>
+  <script src="js/all.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/all.css">
+  <link rel="stylesheet" href="css/animate.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Shiza Nasrullah </title>
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 s-icons">
+
+          <ul>
+            <li class="my-follow">Follow Us</li>
+            <li><a href="https://www.facebook.com"><i class="fab fa-facebook-f"></i></a></li>
+            <li><a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="https://www.twitter.com"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="https://www.vimeo.com"><i class="fab fa-vimeo-v"></i></a></li>
+          </ul>
+        </div>
+        <div class="col-md-4 my-header offset-md-4">
+          <ul>
+            <li class="my"><a href="#"><i class="fa fa-phone"></i>
+                
+            +965559333352</a></li>
+                <li><a href="#" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</a></li>
+                <li><a href="#"  data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">Register</a></li>
+             
+          </ul>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="scroll-effect">
+  
+
+    <div id="id01" class="modal">
+      
+      <form class="modal-content animate" action="/action_page.php" method="post">
+        <div class="imgcontainer">
+          <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+          <img src="images/key.jpg"  alt="Avatar" class="avatar">
+        </div>
+    
+        <div class="container">
+          <label for="uname"><b>Username</b></label>
+          <input type="text" placeholder="Enter Username" name="uname" required>
+    
+          <label for="psw"><b>Password</b></label>
+          <input type="password" placeholder="Enter Password" name="psw" required>
+            
+          <button type="submit">Login</button>
+          <label>
+            <input type="checkbox" checked="checked" name="remember"> Remember me
+          </label>
+        </div>
+    
+        <div class="container" style="background-color:#f1f1f1">
+          <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+          <span class="psw">Forgot <a href="#">password?</a></span>
+        </div>
+      </form>
+    </div>
+    
+    </div>
+    
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">New message</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form action="action_page.php">
+              <div class="container">
+                <h1>Register</h1>
+                <p>Please fill in this form to create an account.</p>
+                <hr>
+            
+                <label for="email"><b>Email</b></label>
+                <input type="text" placeholder="Enter Email" name="email" required>
+            
+                <label for="psw"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="psw" required>
+            
+                <label for="psw-repeat"><b>Repeat Password</b></label>
+                <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+                <hr>
+            
+                <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+                <button type="submit" class="registerbtn">Register</button>
+              </div>
+            
+              <div class="container signin">
+                <p>Already have an account? <a href="#">Sign in</a>.</p>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-success">Submit</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  <div class="main-nav">
+    <nav class="navbar navbar-expand-md navbar-light bg-light">
+
+      <div class="container">
+
+        <a href="index.html" class="navbar-brand"><i class="fa fa-home"></i> Estate Agent Shiza</a>
+        <button class="navbar-toggler" data-target="#mynavbar" data-toggle="collapse">
+          <i class="fa fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="mynavbar">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item"><a href="index.html" class="nav-link active">HOME</a></li>
+            <li class="nav-item"><a href="about.html" class="nav-link">ABOUT</a></li>
+            <li class="nav-item"><a href="services.html" class="nav-link">SERVICES</a></li>
+            <li class="nav-item"><a href="contact.html" class="nav-link">CONTACT</a></li>
+          </ul>
+        </div>
+
+      </div>
+    </nav>
+  </div>
+  <section id="banner">
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 wow fadeInLeft offset-md-6">
+          <div class="banner-data">
+            <div class="search-main">
+              <input type="search" name="search" id="search" placeholder="Enter Location, Property, Landmark">
+              <button class="search-btn"><i class="fa fa-search"></i></button>
+            </div>
+            <br>
+            <select name="car" id="car">
+              <option value="All">All Actions</option>
+              <option value="Rent">Rent</option>
+              <option value="Sale">Sale</option>
+              <option value="Sold Out">Sold Out</option>
+            </select>
+            <select name="audi" id="audi">
+              <option value="All">All Type</option>
+              <option value="Apartment">Apartment</option>
+              <option value="Buisness">Buisness</option>
+              <option value="House">House</option>
+              <option value="Luxury">Luxury</option>
+              <option value="Residential">Residential</option>
+              <option value="Restaurant">Restaurant</option>
+              <option value="Single">Single</option>
+              <option value="Family">Family</option>
+
+            </select>
+            <select name="car" id="car">
+              <option value="All Cities">All Cities</option>
+              <option value="Pakistan">Pakistan</option>
+              <option value="Oman">India</option>
+              <option value="America">America</option>
+            </select>
+            <select name="audi" id="audi">
+              <option value="min">Min Rooms</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+
+            </select>
+            <select name="car" id="car">
+              <option value="All Bed Rooms">All Bed Rooms</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+            </select>
+            <select name="audi" id="audi">
+              <option value="All">All Baths</option>
+              <option value="Apartment">1</option>
+              <option value="Buisness">2</option>
+              <option value="House">3</option>
+              <option value="Luxury">4</option>
+              <option value="Residential">5</option>
+              <option value="Restaurant">6</option>
+              <option value="Single">7</option>
+              <option value="Family">8</option>
+
+            </select>
+            <div class="container">
+              &nbsp; <button class="btn btn-form">Submit</button></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+  <section id="popular">
+    <div class="container">
+      <div class="popular-head text-center">
+        <h2>Popular Locations</h2>
+        <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla mollis dapibus
+          nunc, ut rhoncus turpis sodales quis. Integer sit amet mattis quam.</p>
+      </div>
+    </div>
+    <div class="popular-data">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="relevant">
+              <img src="images/g1.jpg" alt="">
+              <div class="overlay1">
+                <div class="text">
+                  Austin <br>
+
+                </div>
+                <span class="listing"> 2 Listings</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="relevant">
+              <img src="images/g2.jpg" alt="">
+              <div class="overlay1">
+                <div class="text">
+                  Chicaggo
+
+                </div>
+                <span class="listing"> 2 Listings</span>
+
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="relevant">
+              <img src="images/g3.jpg" alt="">
+              <div class="overlay1">
+                <div class="text">
+                  Dallas
+
+                </div>
+                <span class="listing"> 2 Listings</span>
+
+              </div>
+            </div>
+          </div>
+          <br>
+
+        </div>
+       
+        <div class="row">
+          <div class="col-md-4">
+            <div class="relevant">
+              <img src="images/g4.jpg" alt="">
+              <div class="overlay1">
+                <div class="text">
+                  Houston
+                </div>
+                <span class="listing"> 2 Listings</span>
+
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="relevant">
+              <img src="images/g5.jpg" alt="">
+              <div class="overlay1">
+                <div class="text">
+                  Jacksonvillie
+                </div>
+                <span class="listing"> 2 Listings</span>
+
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="relevant">
+              <img src="images/g6.jpg" alt="">
+              <div class="overlay1">
+                <div class="text">
+                  New Jersey
+                </div>
+                <span class="listing"> 2 Listings</span>
+
+              </div>
+            </div>
+          </div>
+          <br>
+
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <section class="offer">
+    <div class="overlay">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="offer-head text-center">
+              <h3>What We Offer</h3>
+              <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla mollis
+                dapibus nunc, ut rhoncus turpis sodales quis. Integer sit amet mattis quam.</p>
+            </div>
+          </div>
+        </div>
+        <div class="row row-1">
+          <div class="col-md-4 offering">
+            <h2>We’re Offering <br> Unmatched Services</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero, dolore. Lorem ipsum dolor sit, amet
+              consectetur adipisicing elit. Vero, dolore. Vestibulum ante ipsum primis in faucibus orci luctus et
+              ultrices
+              posuere cubilia Curae; Nulla mollis dapibus nunc Integer sit amet mattis quam.
+
+              Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla mollis
+              dapibus
+              nunc, ut rhoncus turpis sodales quis. Integer sit amet mattis quam.</p>
+            <div class="row center">
+              <div class="col-md-4">
+                <span class="counter">2300</span>
+                <h6>Clients</h6>
+              </div>
+              <div class="col-md-4">
+                <span class="counter">16</span>
+                <h6>Awards</h6>
+              </div>
+              <div class="col-md-4">
+                <span class="counter">5300</span>
+                <h6>Projects</h6>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 breaks">
+            <div class="card mycard">
+              <span> <i class="fa fa-laptop"></i>
+              </span>
+              <h2 class="card-title">Fastest Service</h2>
+              <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero, dolore.</p>
+            </div>
+            <br>
+            <div class="card mycard">
+              <span> <i class="fa fa-lock"></i>
+              </span>
+              <h2 class="card-title">Property Insurance</h2>
+              <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero, dolore.</p>
+            </div>
+          </div>
+          <div class="col-md-4 breaks">
+            <div class="card mycard">
+              <span> <i class="fa fa-database"></i>
+              </span>
+              <h2 class="card-title">Largest Real Estate</h2>
+              <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero, dolore.</p>
+            </div>
+            <br>
+            <div class="card mycard">
+              <span> <i class="fa fa-mobile"></i>
+              </span>
+              <h2 class="card-title">Doorstep Process</h2>
+              <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero, dolore.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+  </section>
+
+  <section id="sale">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="sale-head text-center">
+            <h2>Properties For Sale</h2>
+            <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla mollis
+              dapibus nunc, ut rhoncus turpis sodales quis. Integer sit amet mattis quam.</p>
+          </div>
+        </div>
+      </div>
+      <br><br>
+      <div class="sale-main">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card" style="width: 23rem;">
+              <img src="images/g7.jpg" class="img-fluid" alt="">
+              <div class="card-body">
+                <span class="card-heading"> Luxury Apartment in Chulsea
+                </span>
+                <br>
+                <span class="price">
+                  $ 450,000 $777 / sqft
+                </span>
+                <hr>
+                <span class="card-icons "><i class="fa fa-bed"></i> 4 Beds</span>
+                <span class="card-icons work"><i class="fa fa-bath"></i> 3 Baths</span>
+                <span class="card-icons"><i class="fa fa-share-square"></i> 1200 sq Ft</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card" style="width: 23rem;">
+              <img src="images/g6.jpg" class="img-fluid" alt="">
+              <div class="card-body">
+                <span class="card-heading"> Nature-Friendly Family Houses
+                </span>
+                <br>
+                <span class="price">
+                  $ 1,350 / per month
+                </span>
+                <hr>
+                <span class="card-icons"><i class="fa fa-bed"></i> 4 Beds</span>
+                <span class="card-icons work"><i class="fa fa-bath"></i> 3 Baths</span>
+                <span class="card-icons"><i class="fa fa-share-square"></i> 1200 sq Ft</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card" style="width: 23rem;">
+              <img src="images/g5.jpg" class="img-fluid" alt="">
+              <div class="card-body">
+                <span class="card-heading"> Villa In Miami Beach Florida
+
+                </span>
+                <br>
+                <span class="price">
+                  $ 150,000 500 / Per Sqft
+                </span>
+                <hr>
+                <span class="card-icons"><i class="fa fa-bed"></i> 4 Beds</span>
+                <span class="card-icons work"><i class="fa fa-bath"></i> 3 Baths</span>
+                <span class="card-icons"><i class="fa fa-share-square"></i> 1200 sq Ft</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card" style="width: 23rem;">
+              <img src="images/g1.jpg" class="img-fluid" alt="">
+              <div class="card-body">
+                <span class="card-heading"> House Rent In Hydepark
+
+                </span>
+                <br>
+                <span class="price">
+                  $ 2,500 /per month
+
+                </span>
+                <hr>
+                <span class="card-icons"><i class="fa fa-bed"></i> 4 Beds</span>
+                <span class="card-icons work"><i class="fa fa-bath"></i> 3 Baths</span>
+                <span class="card-icons"><i class="fa fa-share-square"></i> 1200 sq Ft</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card" style="width: 23rem;">
+              <img src="images/g2.jpg" class="img-fluid" alt="">
+              <div class="card-body">
+                <span class="card-heading"> Apartment In Memorial Texas
+
+
+                </span>
+                <br>
+                <span class="price">
+                  $ 220,000 550 / Sqft
+                </span>
+                <hr>
+                <span class="card-icons"><i class="fa fa-bed"></i> 4 Beds</span>
+                <span class="card-icons work"><i class="fa fa-bath"></i> 3 Baths</span>
+                <span class="card-icons"><i class="fa fa-share-square"></i> 1200 sq Ft</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card" style="width: 23rem;">
+              <img src="images/g4.jpg" class="img-fluid" alt="">
+              <div class="card-body">
+                <span class="card-heading"> Apartment Jacksonville
+                
+                </span>
+                <br>
+                <span class="price">
+                  $ 750 /per month
+                </span>
+                <hr>
+                <span class="card-icons"><i class="fa fa-bed"></i> 4 Beds</span>
+                <span class="card-icons work"><i class="fa fa-bath"></i> 3 Baths</span>
+                <span class="card-icons"><i class="fa fa-share-square"></i> 1200 sq Ft</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="us">
+    <div class="overlay-2">
+      <div class="us-head text-center">
+        <h3>
+          What Makes Us The Preferred Choice
+        </h3>
+        <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla mollis dapibus
+          nunc, ut rhoncus turpis sodales quis. Integer sit amet mattis quam.</p>
+      </div>
+      <div class="us-data">
+        <div class="container">
+          <div class="row">
+
+            <div class="col-md-3">
+              <div class="data-1">
+                <span>
+                  <i class="fa fa-university"></i>
+                </span>
+                <h3>Our Choices</h3>
+                <p>Lorem ipsum dolor sit amet.</p>
+              </div>
+              <div class="data-1">
+                <span>
+                  <i class="fa fa-cubes"></i>
+                </span>
+                <h3>Seller Prefer Us</h3>
+                <p>Lorem ipsum dolor sit amet.</p>
+              </div>
+
+
+            </div>
+            <div class="col-md-4">
+              <div class="data-1">
+                <span>
+                  <i class="fa fa-bath"></i>
+                </span>
+                <h3>Buyers Trust  Us</h3>
+                <p>Lorem ipsum dolor sit amet.</p>
+              </div>
+              <div class="data-1">
+                <span>
+                  <i class="fa fa-hospital"></i>
+                </span>
+                <h3>Expert Guidance</h3>
+                <p>Lorem ipsum dolor sit amet.</p>
+              </div>
+
+
+            </div>
+            <div class="col-md-5 what-data">
+              <div class="what-data-main">
+                <h3>What Makes Us</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero, dolore. Lorem ipsum dolor sit, amet
+                  consectetur adipisicing elit. Vero, dolore. Vestibulum ante ipsum primis in Nulla mollis dapibus nunc
+                  Integer sit amet mattis quam.
+                  <br><br>
+                  <span class="vero"> Vero, dolore. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
+                    posuere cubilia Curae; Nulla mollis dapibus nunc Integer sit amet mattis quam.</span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="here">
+    <div class="here-head text-center">
+      <h3>We Are Here For You</h3>
+      <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla mollis dapibus
+        nunc, ut rhoncus turpis sodales quis. Integer sit amet mattis quam.</p>
+    </div>
+    <div class="here-data text-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3">
+            <span><i class="fa fa-map-marker"></i></span>
+            <h3>180+</h3>
+            <h5 class="text-muted">Property Locations</h5>
+          </div>
+          <div class="col-md-3">
+            <span><i class="fa fa-users"></i></span>
+            <h3>100+</h3>
+            <h5 class="text-muted">Professional Agents</h5>
+          </div>
+          <div class="col-md-3">
+            <span><i class="fa fa-building"></i></span>
+            <h3>250+</h3>
+            <h5 class="text-muted">Property for Sell</h5>
+          </div>
+          <div class="col-md-3">
+            <span><i class="fa fa-home"></i></span>
+            <h3>3200+</h3>
+            <h5 class="text-muted">Property For Rent</h5>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <footer>
+    <div class="overlay-2">
+      <div class="footer-head">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 ">
+              <h2>News Letter - Get Updates & <br> Latest News</h2>
+            </div>
+            <div class="col-md-6">
+              <form class="rightside-form">
+                <input type="email" name="email" id="email" placeholder="Enter your email">
+                <button class="btn" type="submit">Subscribe</button>
+              </form>
+            </div>
+          </div>
+        </div>
+        <hr class="myhr">
+      </div>
+      <div class="footer-main">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4 about-head">
+              <h4>About Us</h4>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, harum?</p>
+              <div class="social">
+                <h3>
+                  Social Links
+                </h3>
+                <ul class="mysocial">
+                  <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                  <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                  <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                  <li><a href="#"><i class="fab fa-vimeo-v"></i></a></li>
+                  <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-2">
+              <div class="my-use">
+                <h4 class="use">Useful Links</h4>
+                <ul class="links">
+                  <li><a href="#">Management</a></li>
+                  <li><a href="#">Reporting</a></li>
+                  <li><a href="#">Tracking</a></li>
+                  <li><a href="#">All Users
+                    </a></li>
+                  <li><a href="#">Support
+                    </a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-4 none">
+              <h3 class="feat-color">Featured Properties</h3>
+              <div class="feat-data">
+                <img src="images/g7.jpg" class="img-fluid" alt="">
+                <p>
+                  We Are Leading International <br> Consultiing Agency</p>
+                <div class="clear"></div>
+              </div>
+              <div class="feat-data">
+                <img src="images/g7.jpg" class="img-fluid" alt="">
+                <p>
+
+                  Digital Marketing Agency <br>
+                  all the foundational tools
+
+                </p>
+                <div class="clear"></div>
+              </div>
+              <div class="feat-data">
+                <img src="images/g7.jpg" class="img-fluid" alt="">
+                <p>
+                  We Are Leading International <br> Consultiing Agency</p>
+                <div class="clear"></div>
+              </div>
+            </div>
+
+
+
+
+
+
+            <div class="col-md-2">
+              <div class="my-use">
+                <h4 class="use">Quick Links</h4>
+                <ul class="links">
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="about.html">About</a></li>
+                  <li><a href="services.html">Services</a></li>
+                  <li><a href="#">Blog
+                    </a></li>
+                  <li><a href="contact.html">Contact
+                    </a></li>
+                </ul>
+              </div>
+            </div>
+
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <hr class="myhr">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12 last-footer text-center">
+              <h5>&copy2020 Estate Agent. All rights reserved | Designated by Sheza Nasrullah
+                Section:A
+              Sap id 70110705 </h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+  <script src="js/jquery.js"></script>
+  <script src="js/popper.js"></script>
+  <script src="js/wow.min.js"></script>
+  <script>
+  new WOW().init();
+  </script>
+  <script src="js/all.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+
+
+</body>
+
+</html>
